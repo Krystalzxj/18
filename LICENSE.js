@@ -57,14 +57,14 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-         `[IP 地址]\n` +
-        (v4.primaryAddress ? `IPv4 : ${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `IPv6 : ${v6.primaryAddress}\n` : '') +
-        (v4.primaryRouter && wifi.ssid ? `Router IPv4 : ${v4.primaryRouter}\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
-        `[节点 IP] : ${info.query}\n` +
-        `[节点 ISP] : ${info.isp}\n` +
-        `[节点位置] : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
+         `[𝙄𝙋 地址]\n` +
+        (v4.primaryAddress ? `𝑰𝑷𝒗4 : ${v4.primaryAddress} \n` : '') +
+        (v6.primaryAddress ? `𝑰𝑷𝒗6 : ${v6.primaryAddress}\n` : '') +
+        (v4.primaryRouter && wifi.ssid ? `𝑹𝒐𝒖𝒕𝒆𝒓 IPv4 : ${v4.primaryRouter}\n` : '') +
+        (v6.primaryRouter && wifi.ssid ? `𝑹𝒐𝒖𝒕𝒆𝒓 IPv6 : ${v6.primaryRouter}\n` : '') +
+        `[𝑵𝒐𝒅𝒆 𝑰𝑷] : ${info.query}\n` +
+        `[𝑵𝒐𝒅𝒆 𝑰𝑺𝑷] : ${info.isp}\n` +
+        `[𝑵𝒐𝒅𝒆 𝒍𝒐𝒄𝒂𝒕𝒊𝒐𝒏] : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'hand.point.up.braille.fill' : 'simcard',
       'icon-color': wifi.ssid ? '#fff2df' : '#eec362',
